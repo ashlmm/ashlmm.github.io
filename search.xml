@@ -3,8 +3,8 @@
   <entry>
     <title>JAVASE</title>
     <url>/2022/01/26/JAVASE/</url>
-    <content><![CDATA[<p>一、注释<br>1.单行注释<br><code>// 注释的内容</code><br>2.多行注释<br><code>/* 注释的内容 */</code><br>3.文档注释<br><code>/** 注释的内容 */</code>，生成帮助文档的语法格式：javadoc -d 目录名 文件名.java</p>
-<p>二、JAVA变量命名规则<br>1.标识符命名规则<br>   1)只能由字母，数字，下划线_，$组成<br>   2)不能以数字开头<br>   3)不能是java中的关键字<br>   4)不能是字面值 true,false,null<br>2.规范<br>   小驼峰，多个单词组成，第一个单词首字母小写，后边每个单词首字母大写</p>
+    <content><![CDATA[<p>####一、注释<br>1.单行注释<br><code>// 注释的内容</code><br>2.多行注释<br><code>/* 注释的内容 */</code><br>3.文档注释<br><code>/** 注释的内容 */</code>，生成帮助文档的语法格式：javadoc -d 目录名 文件名.java</p>
+<p>####二、JAVA变量命名规则<br>1.标识符命名规则<br>   1)只能由字母，数字，下划线_，$组成<br>   2)不能以数字开头<br>   3)不能是java中的关键字<br>   4)不能是字面值 true,false,null<br>2.规范<br>   小驼峰，多个单词组成，第一个单词首字母小写，后边每个单词首字母大写</p>
 ]]></content>
   </entry>
 </search>
