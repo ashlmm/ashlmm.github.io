@@ -45,6 +45,30 @@
 <li>do-while<br>语法<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">   循环操作</span><br><span class="line">&#125;<span class="keyword">while</span>(循环条件)</span><br></pre></td></tr></table></figure></li>
 <li>for<br>语法<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(参数初始化;条件判断;更新循环变量)&#123;</span><br><span class="line">   循环操作</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
+<h4 id="十一、格式化小数"><a href="#十一、格式化小数" class="headerlink" title="十一、格式化小数"></a>十一、格式化小数</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">df = <span class="keyword">new</span> DecimalFormat(<span class="string">&quot;00.00&quot;</span>);</span><br><span class="line">System.out.println(df.format(sum));<span class="comment">//02.18</span></span><br><span class="line">df = <span class="keyword">new</span> DecimalFormat(<span class="string">&quot;##.##&quot;</span>);</span><br><span class="line">System.out.println(df.format(sum));<span class="comment">//2.18</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="十二、java-util-Arrays类"><a href="#十二、java-util-Arrays类" class="headerlink" title="十二、java.util.Arrays类"></a>十二、java.util.Arrays类</h4><ol>
+<li>toString</li>
+<li>Sort</li>
+<li>binarySearch<br>存在返回 数据在数组中的位置，不存在返回 -插入点-1。<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">arr = [<span class="number">11</span>, <span class="number">22</span>, <span class="number">33</span>]</span><br><span class="line">System.out.println(Arrays.binarySearch(arr, <span class="number">25</span>));-- -<span class="number">3</span></span><br></pre></td></tr></table></figure></li>
+<li>equals</li>
+<li>fill</li>
+<li>copyOf</li>
+</ol>
+<h4 id="十三、成员变量和局部变量的区别"><a href="#十三、成员变量和局部变量的区别" class="headerlink" title="十三、成员变量和局部变量的区别"></a>十三、成员变量和局部变量的区别</h4><ol>
+<li>成员变量在整个类中有效，局部变量只在定义他的方法内有效</li>
+<li>成员变量系统自动赋默认值，局部变量需初始化</li>
+<li>成员变量和局部变量同名，方法内优先使用局部变量</li>
+</ol>
+<h4 id="十四、重载"><a href="#十四、重载" class="headerlink" title="十四、重载"></a>十四、重载</h4><p>定义：在同一个类中，方法名相同，参数列表不同</p>
+<h4 id="十五、单例模式"><a href="#十五、单例模式" class="headerlink" title="十五、单例模式"></a>十五、单例模式</h4><p>饿汉式和懒汉式区别：</p>
+<ol>
+<li>饿汉式类加载的时候对象就已经创建了；<br>懒汉式类加载的时候对象没有创建，只有在应用的时候才会创建（getWindow());</li>
+<li>饿汉式线程安全的;<br>懒汉式线程非安全<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 饿汉式</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Window</span></span>&#123;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> Window win = <span class="keyword">new</span> Window();</span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="title">Window</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Window <span class="title">getWindow</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> win;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//懒汉式</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Window</span></span>&#123;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> Window win = <span class="keyword">null</span>;</span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="title">Window</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Window <span class="title">getWindow</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(win == <span class="keyword">null</span>)</span><br><span class="line">         win = <span class="keyword">new</span> Window();</span><br><span class="line">      <span class="keyword">return</span> win;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="十六、Math类"><a href="#十六、Math类" class="headerlink" title="十六、Math类"></a>十六、Math类</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestMath</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">      System.out.println(Math.ceil(<span class="number">55.78</span>));<span class="comment">// 56.0</span></span><br><span class="line">      System.out.println(Math.floor(<span class="number">55.78</span>));<span class="comment">// 55.0</span></span><br><span class="line">      System.out.println(Math.round(<span class="number">66.89</span>));<span class="comment">// 67</span></span><br><span class="line">      System.out.println(Math.pow(<span class="number">2</span>, <span class="number">3</span>));<span class="comment">// 8.0</span></span><br><span class="line">      System.out.println(Math.random());<span class="comment">//范围:[0.0,1.0)大于等于0.0&amp;&amp;小于1.0  </span></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="十七、方法重写"><a href="#十七、方法重写" class="headerlink" title="十七、方法重写"></a>十七、方法重写</h4><p>规范：在子类的实例方法，<br>     方法名相同<br>     参数列表相同<br>     返回值类型相同<br>     访问权限子类不能比父类更严格（低）<br>     异常范围不能比父类更大</p>
 ]]></content>
       <tags>
         <tag>java</tag>
