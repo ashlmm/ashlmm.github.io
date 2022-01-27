@@ -3,51 +3,51 @@
   <entry>
     <title>JAVASE</title>
     <url>/2022/01/26/JAVASE/</url>
-    <content><![CDATA[<h4 id="一、注释"><a href="#一、注释" class="headerlink" title="一、注释"></a>一、注释</h4><ol>
+    <content><![CDATA[<h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><ol>
 <li>单行注释<br><code>// 注释的内容</code></li>
 <li>多行注释<br><code>/* 注释的内容 */</code></li>
 <li>文档注释<br><code>/** 注释的内容 */</code>，生成帮助文档的语法格式：javadoc -d 目录名 文件名.java</li>
 </ol>
-<h4 id="二、JAVA变量命名规则"><a href="#二、JAVA变量命名规则" class="headerlink" title="二、JAVA变量命名规则"></a>二、JAVA变量命名规则</h4><ol>
+<h4 id="JAVA变量命名规则"><a href="#JAVA变量命名规则" class="headerlink" title="JAVA变量命名规则"></a>JAVA变量命名规则</h4><ol>
 <li>标识符命名规则<br>1）只能由字母，数字，下划线_，$组成<br>2）不能以数字开头<br>3）不能是java中的关键字<br>4）不能是字面值 true,false,null</li>
 <li>规范<br>1）小驼峰，多个单词组成，第一个单词首字母小写，后边每个单词首字母大写<br>2）局部变量必须自己初始化之后才能使用</li>
 </ol>
-<h4 id="三、基本数据类型"><a href="#三、基本数据类型" class="headerlink" title="三、基本数据类型"></a>三、基本数据类型</h4><ol>
+<h4 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h4><ol>
 <li>整型：字节（Byte），短整型（Short），整型（Integer），长整型（Long）</li>
 <li>浮点型：单精度（Float），双精度（Double）</li>
 <li>字符型（char）</li>
 <li>布尔型（boolean）</li>
 </ol>
-<h4 id="四、引用数据类型"><a href="#四、引用数据类型" class="headerlink" title="四、引用数据类型"></a>四、引用数据类型</h4><ol>
+<h4 id="引用数据类型"><a href="#引用数据类型" class="headerlink" title="引用数据类型"></a>引用数据类型</h4><ol>
 <li>字符串</li>
 <li>数组</li>
 <li>类</li>
 <li>接口</li>
 </ol>
-<h4 id="五、类型转换"><a href="#五、类型转换" class="headerlink" title="五、类型转换"></a>五、类型转换</h4><ol>
+<h4 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h4><ol>
 <li>自动类型转换：低类型-&gt;高类型<br>1）byte  -&gt; short -&gt; int -&gt; long -&gt; float -&gt; double<br>2）char(0-65535) -&gt; int -&gt; long -&gt; float -&gt; double</li>
 <li>强制类型转换：高类型-&gt;低类型，强制转换符(类型）</li>
 </ol>
-<h4 id="六、n-和-n"><a href="#六、n-和-n" class="headerlink" title="六、n++和++n"></a>六、n++和++n</h4><ol>
+<h4 id="n-和-n"><a href="#n-和-n" class="headerlink" title="n++和++n"></a>n++和++n</h4><ol>
 <li>后缀<br>1）混合运算时候：先赋值运算，后自增或自减<br>2）输出语句中：先输出，后自增或自减</li>
 <li>前缀<br>1）混合运算时候：先自增自减运算，后赋值<br>2）输出语句中：先自增或自减，后输出</li>
 </ol>
-<h4 id="七、-amp-amp-和-amp-的区别"><a href="#七、-amp-amp-和-amp-的区别" class="headerlink" title="七、&amp;&amp;||和&amp;|的区别"></a>七、&amp;&amp;||和&amp;|的区别</h4><ol>
+<h4 id="amp-amp-和-amp-的区别"><a href="#amp-amp-和-amp-的区别" class="headerlink" title="&amp;&amp;||和&amp;|的区别"></a>&amp;&amp;||和&amp;|的区别</h4><ol>
 <li>&amp;&amp;和||逻辑运算符（结果：boolean)，&amp;,|位运算符（二进制运算，boolean)</li>
 <li>&amp;&amp;和||短路，&amp;和|非短路</li>
 </ol>
-<h4 id="八、条件运算符"><a href="#八、条件运算符" class="headerlink" title="八、条件运算符"></a>八、条件运算符</h4><p>语法：表达式一？表达式二：表达式三</p>
-<h4 id="九、switch分支"><a href="#九、switch分支" class="headerlink" title="九、switch分支"></a>九、switch分支</h4><p>语法：</p>
+<h4 id="条件运算符"><a href="#条件运算符" class="headerlink" title="条件运算符"></a>条件运算符</h4><p>语法：表达式一？表达式二：表达式三</p>
+<h4 id="switch分支"><a href="#switch分支" class="headerlink" title="switch分支"></a>switch分支</h4><p>语法：</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span> (表达式)&#123;</span><br><span class="line">   <span class="keyword">case</span> 值<span class="number">1</span>:</span><br><span class="line">            语句;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">   <span class="keyword">case</span> 值<span class="number">2</span>:</span><br><span class="line">            语句;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">   <span class="keyword">default</span>:</span><br><span class="line">            语句;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="十、循环结构"><a href="#十、循环结构" class="headerlink" title="十、循环结构"></a>十、循环结构</h4><ol>
+<h4 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h4><ol>
 <li>while<br>语法<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span>(循环条件)&#123;</span><br><span class="line">   循环操作</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 <li>do-while<br>语法<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">do</span>&#123;</span><br><span class="line">   循环操作</span><br><span class="line">&#125;<span class="keyword">while</span>(循环条件)</span><br></pre></td></tr></table></figure></li>
 <li>for<br>语法<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span>(参数初始化;条件判断;更新循环变量)&#123;</span><br><span class="line">   循环操作</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
-<h4 id="十一、格式化小数"><a href="#十一、格式化小数" class="headerlink" title="十一、格式化小数"></a>十一、格式化小数</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">df = <span class="keyword">new</span> DecimalFormat(<span class="string">&quot;00.00&quot;</span>);</span><br><span class="line">System.out.println(df.format(sum));<span class="comment">//02.18</span></span><br><span class="line">df = <span class="keyword">new</span> DecimalFormat(<span class="string">&quot;##.##&quot;</span>);</span><br><span class="line">System.out.println(df.format(sum));<span class="comment">//2.18</span></span><br></pre></td></tr></table></figure>
+<h4 id="格式化小数"><a href="#格式化小数" class="headerlink" title="格式化小数"></a>格式化小数</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">df = <span class="keyword">new</span> DecimalFormat(<span class="string">&quot;00.00&quot;</span>);</span><br><span class="line">System.out.println(df.format(sum));<span class="comment">//02.18</span></span><br><span class="line">df = <span class="keyword">new</span> DecimalFormat(<span class="string">&quot;##.##&quot;</span>);</span><br><span class="line">System.out.println(df.format(sum));<span class="comment">//2.18</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="十二、java-util-Arrays类"><a href="#十二、java-util-Arrays类" class="headerlink" title="十二、java.util.Arrays类"></a>十二、java.util.Arrays类</h4><ol>
+<h4 id="java-util-Arrays类"><a href="#java-util-Arrays类" class="headerlink" title="java.util.Arrays类"></a>java.util.Arrays类</h4><ol>
 <li>toString</li>
 <li>Sort</li>
 <li>binarySearch<br>存在返回 数据在数组中的位置，不存在返回 -插入点-1。<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">arr = [<span class="number">11</span>, <span class="number">22</span>, <span class="number">33</span>]</span><br><span class="line">System.out.println(Arrays.binarySearch(arr, <span class="number">25</span>));-- -<span class="number">3</span></span><br></pre></td></tr></table></figure></li>
@@ -55,20 +55,20 @@
 <li>fill</li>
 <li>copyOf</li>
 </ol>
-<h4 id="十三、成员变量和局部变量的区别"><a href="#十三、成员变量和局部变量的区别" class="headerlink" title="十三、成员变量和局部变量的区别"></a>十三、成员变量和局部变量的区别</h4><ol>
+<h4 id="成员变量和局部变量的区别"><a href="#成员变量和局部变量的区别" class="headerlink" title="成员变量和局部变量的区别"></a>成员变量和局部变量的区别</h4><ol>
 <li>成员变量在整个类中有效，局部变量只在定义他的方法内有效</li>
 <li>成员变量系统自动赋默认值，局部变量需初始化</li>
 <li>成员变量和局部变量同名，方法内优先使用局部变量</li>
 </ol>
-<h4 id="十四、重载"><a href="#十四、重载" class="headerlink" title="十四、重载"></a>十四、重载</h4><p>定义：在同一个类中，方法名相同，参数列表不同</p>
-<h4 id="十五、单例模式"><a href="#十五、单例模式" class="headerlink" title="十五、单例模式"></a>十五、单例模式</h4><p>饿汉式和懒汉式区别：</p>
+<h4 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h4><p>定义：在同一个类中，方法名相同，参数列表不同</p>
+<h4 id="单例模式"><a href="#单例模式" class="headerlink" title="单例模式"></a>单例模式</h4><p>饿汉式和懒汉式区别：</p>
 <ol>
 <li>饿汉式类加载的时候对象就已经创建了；<br>懒汉式类加载的时候对象没有创建，只有在应用的时候才会创建（getWindow());</li>
 <li>饿汉式线程安全的;<br>懒汉式线程非安全<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 饿汉式</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Window</span></span>&#123;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> Window win = <span class="keyword">new</span> Window();</span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="title">Window</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Window <span class="title">getWindow</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> win;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//懒汉式</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Window</span></span>&#123;</span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> Window win = <span class="keyword">null</span>;</span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="title">Window</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Window <span class="title">getWindow</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(win == <span class="keyword">null</span>)</span><br><span class="line">         win = <span class="keyword">new</span> Window();</span><br><span class="line">      <span class="keyword">return</span> win;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ol>
-<h4 id="十六、Math类"><a href="#十六、Math类" class="headerlink" title="十六、Math类"></a>十六、Math类</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestMath</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">      System.out.println(Math.ceil(<span class="number">55.78</span>));<span class="comment">// 56.0</span></span><br><span class="line">      System.out.println(Math.floor(<span class="number">55.78</span>));<span class="comment">// 55.0</span></span><br><span class="line">      System.out.println(Math.round(<span class="number">66.89</span>));<span class="comment">// 67</span></span><br><span class="line">      System.out.println(Math.pow(<span class="number">2</span>, <span class="number">3</span>));<span class="comment">// 8.0</span></span><br><span class="line">      System.out.println(Math.random());<span class="comment">//范围:[0.0,1.0)大于等于0.0&amp;&amp;小于1.0  </span></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Math类"><a href="#Math类" class="headerlink" title="Math类"></a>Math类</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestMath</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">      System.out.println(Math.ceil(<span class="number">55.78</span>));<span class="comment">// 56.0</span></span><br><span class="line">      System.out.println(Math.floor(<span class="number">55.78</span>));<span class="comment">// 55.0</span></span><br><span class="line">      System.out.println(Math.round(<span class="number">66.89</span>));<span class="comment">// 67</span></span><br><span class="line">      System.out.println(Math.pow(<span class="number">2</span>, <span class="number">3</span>));<span class="comment">// 8.0</span></span><br><span class="line">      System.out.println(Math.random());<span class="comment">//范围:[0.0,1.0)大于等于0.0&amp;&amp;小于1.0  </span></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="十七、方法重写"><a href="#十七、方法重写" class="headerlink" title="十七、方法重写"></a>十七、方法重写</h4><p>规范：在子类的实例方法，<br>     方法名相同<br>     参数列表相同<br>     返回值类型相同<br>     访问权限子类不能比父类更严格（低）<br>     异常范围不能比父类更大</p>
+<h4 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h4><p>规范：在子类的实例方法，<br>     方法名相同<br>     参数列表相同<br>     返回值类型相同<br>     访问权限子类不能比父类更严格（低）<br>     异常范围不能比父类更大</p>
 ]]></content>
       <categories>
         <category>javase</category>
