@@ -71,7 +71,7 @@
 <h4 id="方法重写"><a href="#方法重写" class="headerlink" title="方法重写"></a>方法重写</h4><p>规范：在子类的实例方法，<br>     方法名相同<br>     参数列表相同<br>     返回值类型相同<br>     访问权限子类不能比父类更严格（低）<br>     异常范围不能比父类更大</p>
 ]]></content>
       <categories>
-        <category>javase</category>
+        <category>java</category>
       </categories>
       <tags>
         <tag>java</tag>
