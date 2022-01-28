@@ -3,7 +3,8 @@
   <entry>
     <title>VIM常用命令</title>
     <url>/2022/01/28/VIM%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h4 id="vim介绍"><a href="#vim介绍" class="headerlink" title="vim介绍"></a>vim介绍</h4><p>vim是从vi发展出来的文本编辑器，是一个程序开发工具。vim官网：<a href="https://www.vim.org/">https://www.vim.org/</a></p>
+]]></content>
       <categories>
         <category>linux</category>
       </categories>
