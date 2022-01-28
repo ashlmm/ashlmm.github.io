@@ -1,31 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>VIM常用命令</title>
-    <url>/2022/01/28/VIM%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h4 id="vim介绍"><a href="#vim介绍" class="headerlink" title="vim介绍"></a>vim介绍</h4><p>vim是从vi发展出来的文本编辑器，是一个程序开发工具，vim官网：<a href="https://www.vim.org/%E3%80%82">https://www.vim.org/。</a></p>
-<h4 id="vim键盘图"><a href="#vim键盘图" class="headerlink" title="vim键盘图"></a>vim键盘图</h4><p><img src="/2022/01/28/VIM%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/vi-vim-cheat-sheet-sch.gif" alt="vim键盘图"></p>
-<h4 id="vim常用命令"><a href="#vim常用命令" class="headerlink" title="vim常用命令"></a>vim常用命令</h4><ol>
-<li><p>移动光标<br>w：跳到下一个词首（按标点或单词分割）<br>W：跳到下一个词首（忽略标点）<br>e：跳到下一个词尾（按标点或单词分割）<br>E：跳到下一个词尾（忽略标点）<br>b：跳到上一个词首（按标点或单词分割）<br>B：跳到上一个词首（忽略标点）<br>0：跳到行首<br>^：跳到行首（第一个单词首）<br>$：跳到行尾<br>gg：跳到文首<br>G：跳到文尾<br>5gg(5G)：跳到第5行</p>
-</li>
-<li><p>删除复制<br>D：删除内容到行尾<br>yy：复制一行<br>P：粘贴内容到下一行<br>p：粘贴内容到上一行</p>
-</li>
-<li><p>插入模式<br>I：行首插入<br>o：下方新增行并插入<br>O：上方新增行并插入</p>
-</li>
-<li><p>编辑<br>J：将当前行和下一行连接<br>c$：删除光标到行尾内容，进入编辑模式<br>S：删除当前行，进入编辑模式<br>u：撤销</p>
-</li>
-<li><p>查找替换<br>/str：向后搜索str字符串<br>?str：向前搜索str字符串<br>“\c”：忽略大小写<br>“\C”：敏感大小写<br>n：下一个匹配<br>N：上一个匹配<br>%s/old/new/g：将整个文件old替换为new<br>%s/old/new/gc：将整个文件old替换为new（每次替换前提示）</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JAVASE</title>
     <url>/2022/01/26/JAVASE/</url>
     <content><![CDATA[<h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><ol>
@@ -100,6 +75,31 @@
       </categories>
       <tags>
         <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VIM常用命令</title>
+    <url>/2022/01/28/VIM%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h4 id="vim介绍"><a href="#vim介绍" class="headerlink" title="vim介绍"></a>vim介绍</h4><p>vim是从vi发展出来的文本编辑器，是一个程序开发工具，vim官网：<a href="https://www.vim.org/%E3%80%82">https://www.vim.org/。</a></p>
+<h4 id="vim键盘图"><a href="#vim键盘图" class="headerlink" title="vim键盘图"></a>vim键盘图</h4><p><img src="/2022/01/28/VIM%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/vi-vim-cheat-sheet-sch.gif" alt="vim键盘图"></p>
+<h4 id="vim常用命令"><a href="#vim常用命令" class="headerlink" title="vim常用命令"></a>vim常用命令</h4><ol>
+<li><p>移动光标<br>w：跳到下一个词首（按标点或单词分割）<br>W：跳到下一个词首（忽略标点）<br>e：跳到下一个词尾（按标点或单词分割）<br>E：跳到下一个词尾（忽略标点）<br>b：跳到上一个词首（按标点或单词分割）<br>B：跳到上一个词首（忽略标点）<br>0：跳到行首<br>^：跳到行首（第一个单词首）<br>$：跳到行尾<br>gg：跳到文首<br>G：跳到文尾<br>5gg(5G)：跳到第5行</p>
+</li>
+<li><p>删除复制<br>D：删除内容到行尾<br>yy：复制一行<br>P：粘贴内容到下一行<br>p：粘贴内容到上一行</p>
+</li>
+<li><p>插入模式<br>I：行首插入<br>o：下方新增行并插入<br>O：上方新增行并插入</p>
+</li>
+<li><p>编辑<br>J：将当前行和下一行连接<br>c$：删除光标到行尾内容，进入编辑模式<br>S：删除当前行，进入编辑模式<br>u：撤销</p>
+</li>
+<li><p>查找替换<br>/str：向后搜索str字符串<br>?str：向前搜索str字符串<br>“\c”：忽略大小写<br>“\C”：敏感大小写<br>n：下一个匹配<br>N：上一个匹配<br>%s/old/new/g：将整个文件old替换为new<br>%s/old/new/gc：将整个文件old替换为new（每次替换前提示）</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
       </tags>
   </entry>
 </search>
